@@ -1,0 +1,522 @@
+[
+  {
+    "job_id": "JOB-0001",
+    "title": "Senior Data Scientist",
+    "department": "Infrastructure",
+    "level": "senior",
+    "required_skills": [
+      "Kotlin",
+      "PHP",
+      "Express.js",
+      "Redis"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Terraform",
+      "SQLite",
+      "Scikit-learn",
+      "CloudFormation"
+    ],
+    "min_experience_years": 7.1,
+    "required_education": "Advanced degree in Computer Science or related field",
+    "budget_min": 130000.0,
+    "budget_max": 180000.0,
+    "team_size": 11,
+    "work_mode": "hybrid",
+    "urgency": "medium",
+    "team_description": "Fast-paced Infrastructure team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable backend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": null
+  },
+  {
+    "job_id": "JOB-0002",
+    "title": "Full-Stack Developer",
+    "department": "Security",
+    "level": "mid",
+    "required_skills": [
+      "Swift",
+      "Scala",
+      "Angular",
+      "Elasticsearch"
+    ],
+    "preferred_skills": [
+      "Express.js",
+      "C#",
+      "PHP",
+      "Ansible",
+      "Redis"
+    ],
+    "min_experience_years": 2.8,
+    "required_education": "BS Computer Science or equivalent",
+    "budget_min": 85000.0,
+    "budget_max": 130000.0,
+    "team_size": 7,
+    "work_mode": "remote",
+    "urgency": "high",
+    "team_description": "Fast-paced Security team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable frontend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Learn from senior engineers",
+      "Implement features based on architectural guidelines"
+    ],
+    "growth_opportunities": null
+  },
+  {
+    "job_id": "JOB-0003",
+    "title": "Junior Software Engineer",
+    "department": "Security",
+    "level": "junior",
+    "required_skills": [
+      "Python",
+      "Ruby",
+      "Flask",
+      "SQLite"
+    ],
+    "preferred_skills": [
+      "Cassandra",
+      "Swift",
+      "FastAPI"
+    ],
+    "min_experience_years": 0.8,
+    "required_education": "BS Computer Science or equivalent",
+    "budget_min": 60000.0,
+    "budget_max": 85000.0,
+    "team_size": 6,
+    "work_mode": "remote",
+    "urgency": "low",
+    "team_description": "Fast-paced Security team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable full-stack solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Learn from senior engineers",
+      "Implement features based on architectural guidelines"
+    ],
+    "growth_opportunities": null
+  },
+  {
+    "job_id": "JOB-0004",
+    "title": "Tech Lead",
+    "department": "Security",
+    "level": "senior",
+    "required_skills": [
+      "Go",
+      "TypeScript",
+      "Angular",
+      "SQLite"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Cassandra",
+      "GitLab CI",
+      "Kotlin/Android",
+      "Stakeholder Management"
+    ],
+    "min_experience_years": 5.2,
+    "required_education": "MS Computer Science preferred",
+    "budget_min": 130000.0,
+    "budget_max": 180000.0,
+    "team_size": 15,
+    "work_mode": "remote",
+    "urgency": "critical",
+    "team_description": "Fast-paced Security team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable backend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": "Strong mentorship, learning budget, conference attendance"
+  },
+  {
+    "job_id": "JOB-0005",
+    "title": "Software Engineer",
+    "department": "Data Science",
+    "level": "mid",
+    "required_skills": [
+      "R",
+      "Swift",
+      "Next.js",
+      "Cassandra"
+    ],
+    "preferred_skills": [
+      "Serverless",
+      "MongoDB",
+      "Go"
+    ],
+    "min_experience_years": 4.5,
+    "required_education": "BS Computer Science or equivalent",
+    "budget_min": 85000.0,
+    "budget_max": 130000.0,
+    "team_size": 13,
+    "work_mode": "onsite",
+    "urgency": "high",
+    "team_description": "Fast-paced Data Science team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable full-stack solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Learn from senior engineers",
+      "Implement features based on architectural guidelines"
+    ],
+    "growth_opportunities": "Strong mentorship, learning budget, conference attendance"
+  },
+  {
+    "job_id": "JOB-0006",
+    "title": "Senior Data Scientist",
+    "department": "Platform",
+    "level": "senior",
+    "required_skills": [
+      "PHP",
+      "R",
+      "Flask",
+      "Neo4j"
+    ],
+    "preferred_skills": [
+      "TypeScript",
+      "Azure",
+      "AWS",
+      "OpenAI API",
+      "ASP.NET"
+    ],
+    "min_experience_years": 5.5,
+    "required_education": "MS Computer Science preferred",
+    "budget_min": 130000.0,
+    "budget_max": 180000.0,
+    "team_size": 13,
+    "work_mode": "remote",
+    "urgency": "medium",
+    "team_description": "Fast-paced Platform team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable full-stack solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": "Strong mentorship, learning budget, conference attendance"
+  },
+  {
+    "job_id": "JOB-0007",
+    "title": "Senior Full-Stack Developer",
+    "department": "Infrastructure",
+    "level": "senior",
+    "required_skills": [
+      "C#",
+      "JavaScript",
+      "Ruby on Rails",
+      "Elasticsearch"
+    ],
+    "preferred_skills": [
+      "GitHub Actions",
+      "Mentoring",
+      "Leadership",
+      "Swift",
+      "Scala"
+    ],
+    "min_experience_years": 7.9,
+    "required_education": "MS Computer Science preferred",
+    "budget_min": 130000.0,
+    "budget_max": 180000.0,
+    "team_size": 15,
+    "work_mode": "remote",
+    "urgency": "low",
+    "team_description": "Fast-paced Infrastructure team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable frontend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": null
+  },
+  {
+    "job_id": "JOB-0008",
+    "title": "Principal Engineer",
+    "department": "Infrastructure",
+    "level": "staff",
+    "required_skills": [
+      "Java",
+      "TypeScript",
+      "Ruby on Rails",
+      "Redis"
+    ],
+    "preferred_skills": [
+      "React Native",
+      "Cassandra",
+      "Kotlin",
+      "Python",
+      "MongoDB",
+      "PyTorch"
+    ],
+    "min_experience_years": 10.4,
+    "required_education": "Advanced degree in Computer Science or related field",
+    "budget_min": 180000.0,
+    "budget_max": 250000.0,
+    "team_size": 13,
+    "work_mode": "hybrid",
+    "urgency": "low",
+    "team_description": "Fast-paced Infrastructure team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable backend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": "Strong mentorship, learning budget, conference attendance"
+  },
+  {
+    "job_id": "JOB-0009",
+    "title": "Associate Developer",
+    "department": "AI/ML",
+    "level": "junior",
+    "required_skills": [
+      "R",
+      "Scala",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "Kubernetes",
+      "GitLab CI",
+      "Next.js",
+      "ASP.NET"
+    ],
+    "min_experience_years": 0.5,
+    "required_education": "BS Computer Science or equivalent",
+    "budget_min": 60000.0,
+    "budget_max": 85000.0,
+    "team_size": 6,
+    "work_mode": "remote",
+    "urgency": "critical",
+    "team_description": "Fast-paced AI/ML team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable backend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Learn from senior engineers",
+      "Implement features based on architectural guidelines"
+    ],
+    "growth_opportunities": null
+  },
+  {
+    "job_id": "JOB-0010",
+    "title": "Senior Data Scientist",
+    "department": "Security",
+    "level": "senior",
+    "required_skills": [
+      "TypeScript",
+      "Swift",
+      "Django",
+      "Elasticsearch"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Terraform",
+      "Vue.js",
+      "Stakeholder Management",
+      "Go"
+    ],
+    "min_experience_years": 6.9,
+    "required_education": "BS Computer Science or equivalent",
+    "budget_min": 130000.0,
+    "budget_max": 180000.0,
+    "team_size": 12,
+    "work_mode": "remote",
+    "urgency": "high",
+    "team_description": "Fast-paced Security team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable frontend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": "Strong mentorship, learning budget, conference attendance"
+  },
+  {
+    "job_id": "JOB-0011",
+    "title": "Backend Engineer",
+    "department": "Platform",
+    "level": "mid",
+    "required_skills": [
+      "Rust",
+      "Ruby",
+      "Vue.js",
+      "Elasticsearch"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "GitHub Actions",
+      "Express.js",
+      "React Native"
+    ],
+    "min_experience_years": 4.6,
+    "required_education": "BS Computer Science or equivalent",
+    "budget_min": 85000.0,
+    "budget_max": 130000.0,
+    "team_size": 7,
+    "work_mode": "remote",
+    "urgency": "high",
+    "team_description": "Fast-paced Platform team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable backend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Learn from senior engineers",
+      "Implement features based on architectural guidelines"
+    ],
+    "growth_opportunities": "Strong mentorship, learning budget, conference attendance"
+  },
+  {
+    "job_id": "JOB-0012",
+    "title": "Principal Engineer",
+    "department": "Security",
+    "level": "staff",
+    "required_skills": [
+      "Python",
+      "Scala",
+      "React",
+      "Elasticsearch"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PHP",
+      "NLP",
+      "TypeScript",
+      "CI/CD",
+      "OpenAI API",
+      "Cassandra"
+    ],
+    "min_experience_years": 10.9,
+    "required_education": "MS Computer Science preferred",
+    "budget_min": 180000.0,
+    "budget_max": 250000.0,
+    "team_size": 12,
+    "work_mode": "remote",
+    "urgency": "low",
+    "team_description": "Fast-paced Security team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable frontend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": null
+  },
+  {
+    "job_id": "JOB-0013",
+    "title": "Staff Software Engineer",
+    "department": "Data Science",
+    "level": "staff",
+    "required_skills": [
+      "Python",
+      "C#",
+      "Angular",
+      "MySQL"
+    ],
+    "preferred_skills": [
+      "Kotlin",
+      "Ruby",
+      "Neo4j",
+      "Flask",
+      "Ruby on Rails",
+      "Flutter",
+      "SQLite",
+      "Jenkins"
+    ],
+    "min_experience_years": 10.6,
+    "required_education": "Advanced degree in Computer Science or related field",
+    "budget_min": 180000.0,
+    "budget_max": 250000.0,
+    "team_size": 9,
+    "work_mode": "remote",
+    "urgency": "critical",
+    "team_description": "Fast-paced Data Science team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable backend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": null
+  },
+  {
+    "job_id": "JOB-0014",
+    "title": "Associate Developer",
+    "department": "Infrastructure",
+    "level": "junior",
+    "required_skills": [
+      "Swift",
+      "JavaScript",
+      "React"
+    ],
+    "preferred_skills": [
+      "GitHub Actions",
+      "NLP"
+    ],
+    "min_experience_years": 1.2,
+    "required_education": "BS Computer Science or equivalent",
+    "budget_min": 60000.0,
+    "budget_max": 85000.0,
+    "team_size": 6,
+    "work_mode": "remote",
+    "urgency": "critical",
+    "team_description": "Fast-paced Infrastructure team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable backend solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Learn from senior engineers",
+      "Implement features based on architectural guidelines"
+    ],
+    "growth_opportunities": null
+  },
+  {
+    "job_id": "JOB-0015",
+    "title": "Senior Software Engineer",
+    "department": "Data Science",
+    "level": "senior",
+    "required_skills": [
+      "C++",
+      "C#",
+      "Flask",
+      "Cassandra"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "Azure",
+      "LangChain",
+      "GitLab CI",
+      "Scikit-learn"
+    ],
+    "min_experience_years": 7.3,
+    "required_education": "Advanced degree in Computer Science or related field",
+    "budget_min": 130000.0,
+    "budget_max": 180000.0,
+    "team_size": 12,
+    "work_mode": "hybrid",
+    "urgency": "low",
+    "team_description": "Fast-paced Data Science team building cutting-edge products",
+    "key_responsibilities": [
+      "Design and implement scalable full-stack solutions",
+      "Collaborate with cross-functional teams to define and ship features",
+      "Write clean, maintainable code with comprehensive tests",
+      "Participate in code reviews and mentor junior engineers",
+      "Contribute to architectural decisions"
+    ],
+    "growth_opportunities": null
+  }
+]

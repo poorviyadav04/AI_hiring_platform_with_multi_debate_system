@@ -1,0 +1,254 @@
+{
+  "num_candidates": 20,
+  "metrics": {
+    "inconsistent_decisions": 0,
+    "score_variance_reduction": "0.0%",
+    "agreement_with_past": "100.0%",
+    "avg_score_difference": "\u00b10.00"
+  },
+  "stateless_results": [
+    {
+      "candidate_id": "CAND-0001",
+      "candidate_name": "Elizabeth Hernandez",
+      "score": 37.66,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "candidate_name": "Joseph Wilson",
+      "score": 47.11,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "candidate_name": "Emily Thompson",
+      "score": 41.2,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "candidate_name": "Carter Williams",
+      "score": 42.34,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "candidate_name": "Liam Li",
+      "score": 64.42,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "candidate_name": "Joseph Scott",
+      "score": 55.68,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "candidate_name": "Owen Thomas",
+      "score": 38.66,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "candidate_name": "Ethan King",
+      "score": 53.65,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "candidate_name": "Abigail Hill",
+      "score": 51.51,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "candidate_name": "Mason Lewis",
+      "score": 48.83,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "candidate_name": "Elizabeth White",
+      "score": 43.8,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "candidate_name": "Owen Moore",
+      "score": 49.99,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "candidate_name": "Isabella Robinson",
+      "score": 54.55,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "candidate_name": "Henry Jones",
+      "score": 66.69,
+      "decision": "conditional_hire"
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "candidate_name": "Olivia Smith",
+      "score": 37.11,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "candidate_name": "Carter Harris",
+      "score": 51.56,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "candidate_name": "William Lee",
+      "score": 46.45,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "candidate_name": "Mason Green",
+      "score": 40.77,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "candidate_name": "Carter Davis",
+      "score": 61.62,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "candidate_name": "Charlotte Martinez",
+      "score": 46.81,
+      "decision": "reject"
+    }
+  ],
+  "memory_results": [
+    {
+      "candidate_id": "CAND-0001",
+      "candidate_name": "Elizabeth Hernandez",
+      "score": 37.66,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "candidate_name": "Joseph Wilson",
+      "score": 47.11,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "candidate_name": "Emily Thompson",
+      "score": 41.2,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "candidate_name": "Carter Williams",
+      "score": 42.34,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "candidate_name": "Liam Li",
+      "score": 64.42,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "candidate_name": "Joseph Scott",
+      "score": 55.68,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "candidate_name": "Owen Thomas",
+      "score": 38.66,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "candidate_name": "Ethan King",
+      "score": 53.65,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "candidate_name": "Abigail Hill",
+      "score": 51.51,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "candidate_name": "Mason Lewis",
+      "score": 48.83,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "candidate_name": "Elizabeth White",
+      "score": 43.8,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "candidate_name": "Owen Moore",
+      "score": 49.99,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "candidate_name": "Isabella Robinson",
+      "score": 54.55,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "candidate_name": "Henry Jones",
+      "score": 66.69,
+      "decision": "conditional_hire"
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "candidate_name": "Olivia Smith",
+      "score": 37.11,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "candidate_name": "Carter Harris",
+      "score": 51.56,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "candidate_name": "William Lee",
+      "score": 46.45,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "candidate_name": "Mason Green",
+      "score": 40.77,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "candidate_name": "Carter Davis",
+      "score": 61.62,
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "candidate_name": "Charlotte Martinez",
+      "score": 46.81,
+      "decision": "reject"
+    }
+  ],
+  "inconsistencies": []
+}

@@ -1,0 +1,16 @@
+{
+  "policy_id": "POLICY-001",
+  "policy_name": "Standard Hiring Policy 2024",
+  "max_budget_overage_percent": 5.0,
+  "require_vp_approval_above": 150000.0,
+  "allow_experience_gap": true,
+  "max_experience_gap_years": 1.0,
+  "require_work_authorization": true,
+  "require_background_check": true,
+  "equal_opportunity_employer": true,
+  "prioritize_internal_candidates": true,
+  "diversity_hiring_goals": true,
+  "min_technical_score": 60.0,
+  "min_behavioral_score": 60.0,
+  "min_overall_score": 65.0
+}
