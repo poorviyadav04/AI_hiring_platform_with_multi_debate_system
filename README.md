@@ -1,346 +1,261 @@
-# AI Hiring Multi-Agent Debate System
+# HireScope AI
 
-> **Zero-Cost, Multi-Agent AI System for Complex Decision Making**
+> **AI-Powered Hiring Platform with Multi-Agent Debate & Semantic Skill Matching**
 
-A production-ready, agentic LLM system that goes beyond simple chatbots. Uses **multi-agent debate**, **hybrid RAG** (vector + graph), and **deterministic scoring** to make explainable hiring decisions.
+A full-stack hiring intelligence platform that uses **multi-agent debate**, **semantic skill matching**, and **explainable scoring** to evaluate candidates. Upload resumes, paste job descriptions, and get transparent, data-driven hiring decisions.
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16-black.svg)](https://nextjs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-## 🎯 Project Overview
+## What This System Does
 
-**Problem:** Traditional AI hiring tools are black boxes - they make decisions without transparency, lack multi-perspective analysis, and suffer from hallucinations.
+**For Candidates** -- Upload your resume + paste a job description to get:
+- An overall fit score with component breakdown (Skills, Experience, Education)
+- Gap analysis showing exactly what you're missing and how critical each gap is
+- "What-if" counterfactuals ("If you learned Docker, your score would increase by +6 pts")
+- A personalized learning roadmap with resources and timelines
 
-**Solution:** This system uses **4 specialized AI agents** that debate like a hiring committee:
-- 📊 **Evaluator** - Objective scoring (deterministic, no hallucination)
-- 👍 **Advocate** - Makes the case FOR hiring
-- 🤔 **Skeptic** - Identifies risks and concerns
-- ⚖️ **Moderator** - Synthesizes debate and decides
-
-**Key Innovation:** Hybrid RAG combines vector similarity (FAISS) with relationship graphs (NetworkX) for contextualized retrieval from past decisions, enabling agents to "learn" from history.
-
----
-
-## 🚀 Key Features
-
-### **1. Multi-Agent Debate System**
-- **4 specialized agents** with distinct roles (Evaluator, Advocate, Skeptic, Moderator).
-- **Sequential workflow:** Evaluation → Advocacy → Skepticism → Synthesis.
-- **State management:** Message passing with full audit trails.
-- **Memory-enabled agents:** Cite past hiring decisions for consistency.
-- Reduces single-point-of-failure bias common in single-agent systems.
-
-### **2. Deterministic Scoring Engine**
-- **Zero Hallucination:** All scores computed with transparent algorithms, effectively eliminating "AI drift" for critical metrics.
-- **Weighted Components:** Skills (40%), Experience (30%), Education (15%), Interviews (15%).
-- **Policy Compliance:** Tracks constraints (budget, experience requirements) with a violation/warning system.
-
-### **3. Learning-Enabled Memory System** ⭐
-Agents learn from past hiring decisions to ensure consistency and reduce bias.
-- **Persistent Storage:** Evaluations automatically saved to `data/evaluations/` with full debate transcripts.
-- **Agent Memory Access:**
-    - **Advocate:** Cites past **hires** to support current candidates (e.g., "We hired a similar profile last month").
-    - **Skeptic:** References past **rejections** to warn against risky candidates.
-- **Consistency Checking:** Moderator automatically checks whether the current decision aligns with past similar cases.
-    - ✅ **Consistent:** "Decision aligns with 3 similar past cases."
-    - ⚠️ **Inconsistent:** "Warning: Similar candidate was hired, but this one is rejected regarding bias."
-
-### **4. Hybrid RAG System**
-- **Vector Store (FAISS):** Semantic similarity search for candidates and job descriptions.
-- **Decision Graph (NetworkX):** Models relationships (hired, rejected, similar candidates).
-- **Hybrid Retrieval:** Combines both methods to re-rank results based on track record, providing richer context than simple similarity search.
-
-### **5. MCP-Compliant Tool Architecture** ⭐
-The system implements **Model Context Protocol (MCP)**-style tool servers for decoupled, discoverable agent-tool communication.
-- **Scoring Server:** Exposes deterministic calculation tools (skills, experience, etc.).
-- **Memory Server:** Exposes RAG and memory query tools (find similar hires, check consistency).
-- **Tool Discovery:** Agents dynamically discover and query tools via a central registry.
-- **Benefits:** Formal tool boundaries, versioning, and microservices-ready architecture.
-
-### **6. Production-Grade Observability** ⭐
-Full execution tracing provides deep insights into system behavior.
-- **OpenTelemetry-Style Tracing:** Every evaluation generates a complete trace (`data/traces/`).
-- **Metrics Tracked:**
-    - Agent lifecycle (start/end times, durations).
-    - Tool call inputs/outputs and latency (<10ms per tool).
-    - Decision flow and memory operations.
-- **Benefits:** Full audit trails for compliance, performance debugging, and transparency.
-
-### **7. Interactive Dashboard & API**
-A comprehensive Streamlit dashboard (`http://localhost:8501`) and FastAPI server (`http://localhost:8000`).
-- **🏠 Home:** System status and memory statistics.
-- **👤 Evaluate:** Run multi-agent evaluations with real-time feedback.
-- **🛡️ Red Team:** Test adversarial cases and counterfactuals ("What if the candidate had AWS?").
-- **📜 Past Decisions:** Search, filter, and analyze the full history of evaluations.
-- **📊 Analytics:** Visualizations of hiring patterns and score distributions.
+**For Hiring Teams** -- Upload multiple resumes to get:
+- Ranked candidates with transparent scores
+- Multi-agent debate: 4 AI agents (Evaluator, Advocate, Skeptic, Moderator) argue over each candidate like a real hiring committee
+- GitHub profile verification for claimed skills
+- Exportable, auditable decision trails
 
 ---
 
-## 📊 Empirical Validation: Memory System Impact
+## Key Features
 
-We evaluated **20 candidates twice** to measure the impact of the memory system:
+### Semantic Skill Matching (Embedding-Based)
+Traditional systems use exact string matching -- if the JD says "Machine Learning" and your resume says "PyTorch", it's a zero match. This system uses **sentence-transformer embeddings** (`all-MiniLM-L6-v2`) to understand that PyTorch *is* Machine Learning.
 
-| Metric | Without Memory (Stateless) | With Memory (Learning Mode) | Improvement |
-| :--- | :--- | :--- | :--- |
-| **Inconsistent Decisions** | Baseline | Reduced by consistency checker | ✅ **More Stable** |
-| **Score Variance** | ±12.3 points | ±8.1 points | **34% Improvement** |
-| **Decision Stability** | Independent | Context-aware | ✅ **Learned from History** |
-| **Consistency Checking** | ❌ None | ✅ Flags anomalies | **100% Coverage** |
+| JD Requirement | Resume Skill | Similarity | Match |
+|:---|:---|:---|:---|
+| Machine Learning | Scikit-learn | 0.71 | Full |
+| Cloud AI Services | AWS | 0.60 | Partial |
+| Backend Development | FastAPI | 0.65 | Partial |
+| Microfinance | PyTorch | 0.46 | No match |
 
-**Key Findings:**
-1.  **Consistency Improvement:** The system caught 100% of outlier decisions.
-2.  **Evidence-Based:** Agents cited 15+ relevant past cases across the 20 evaluations.
+Cross-domain mismatches are correctly rejected -- an ML engineer applying for a finance role scores low on skills, not 90%.
 
----
+### Multi-Agent Debate System
+Four specialized agents evaluate each candidate:
 
-## 📊 System Architecture
+| Agent | Role | What It Does |
+|:---|:---|:---|
+| **Evaluator** | Objective scorer | Runs deterministic scoring -- no hallucination |
+| **Advocate** | Makes the case FOR | Highlights strengths, cites similar successful hires |
+| **Skeptic** | Identifies risks | Flags concerns, gaps, and retention risks |
+| **Moderator** | Final decision | Synthesizes the debate, checks consistency with past decisions |
 
-```mermaid
-graph TD
-    subgraph "FastAPI REST API"
-        API[endpoints: /evaluate, /search, /decisions]
-    end
+### Explainable Scoring Engine
+Every score is transparent and auditable:
 
-    subgraph "Multi-Agent Orchestration"
-        Eval[Evaluator Agent] --> Adv[Advocate Agent]
-        Adv --> Skep[Skeptic Agent]
-        Skep --> Mod[Moderator Agent]
-    end
-
-    subgraph "Tool Servers (MCP)"
-        Scoring[Scoring Server]
-        Memory[Memory Server]
-    end
-
-    subgraph "Data & RAG"
-        FAISS[(Vector Store)]
-        Graph[(NetworkX Graph)]
-        History[(Evaluation Log)]
-    end
-
-    API --> Multi-Agent Orchestration
-    Multi-Agent Orchestration --> Scoring
-    Multi-Agent Orchestration --> Memory
-    Memory --> FAISS
-    Memory --> Graph
-    Memory --> History
+```
+Overall Score = Skills (50%) + Experience (35%) + Education (15%)
 ```
 
+- **Skills:** Semantic embedding match against required + preferred skills
+- **Experience:** Gap analysis with level multipliers (junior/mid/senior)
+- **Education:** Hierarchy-based comparison (High School to PhD)
+
+No black boxes. Every point is traceable to a specific component.
+
+### Counterfactual Explanations
+Shows candidates exactly what would improve their score:
+
+```
+"If you added Docker, your score would increase from 65 to 71 (+6 pts)"
+"Strengthen Cloud AI Services (currently 60% covered via AWS): +3 pts"
+```
+
+### Gap Analysis & Learning Roadmap
+Identifies skill, experience, and education gaps with severity levels (critical/moderate/minor) and generates a personalized learning roadmap with:
+- Specific courses and platforms
+- Estimated weeks to proficiency
+- Impact on score if the gap is closed
+
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-| Component | Technology | Purpose |
-| :--- | :--- | :--- |
-| **Agents** | Python Classes | Multi-agent orchestration, state management |
-| **Schemas** | Pydantic | Type-safe data models & validation |
-| **Vector Search** | FAISS + SentenceTransformers | Semantic similarity search |
-| **Graph DB** | NetworkX | Relationship modeling (candidates/decisions) |
-| **API** | FastAPI + Uvicorn | High-performance REST endpoints |
-| **Dashboard** | Streamlit | Interactive user interface |
-| **Testing** | pytest | Unit and integration testing |
+| Layer | Technology | Purpose |
+|:---|:---|:---|
+| **Frontend** | Next.js 16, React 19, Tailwind CSS | Candidate & hiring team UI |
+| **Backend API** | FastAPI, Uvicorn | REST endpoints with async support |
+| **LLM** | Google Gemini / Groq (configurable) | Resume parsing, JD parsing, roadmap generation |
+| **Skill Matching** | sentence-transformers (all-MiniLM-L6-v2) | Semantic similarity between skills |
+| **Scoring** | Custom Python (deterministic) | Zero-hallucination scoring engine |
+| **Agents** | Custom multi-agent framework | Debate-based candidate evaluation |
+| **Data Validation** | Pydantic v2 | Type-safe models with field validators |
+| **PDF Parsing** | pypdf | Resume text extraction |
 
 ---
 
-## 📦 Installation
+## Getting Started
 
-### **1. Clone Repository**
+### Prerequisites
+- Python 3.11+
+- Node.js 18+
+- A Gemini API key ([get one free](https://aistudio.google.com/apikey)) or Groq API key ([get one free](https://console.groq.com/keys))
+
+### Setup
+
 ```bash
+# Clone
 git clone <repository-url>
-cd llm_model
+cd hiring-system
+
+# Backend
+cd backend
+pip install -e .
+cp .env.example .env  # Add your API keys
+
+# Frontend
+cd ../frontend
+npm install
 ```
 
-### **2. Create Virtual Environment**
+### Run
+
+**Terminal 1 -- Backend:**
 ```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Linux/Mac
-python3 -m venv venv
-source venv/bin/activate
+cd backend
+uvicorn api.main:app --reload --port 8001
 ```
 
-### **3. Install Dependencies**
+**Terminal 2 -- Frontend:**
 ```bash
-pip install -r requirements.txt
+cd frontend
+npm run dev
 ```
 
-### **4. Setup Environment**
-```bash
-cp .env.example .env
-# Edit .env if needed
-```
+- **App:** http://localhost:3000
+- **API Docs:** http://localhost:8001/docs
 
 ---
 
-## 🎮 Quick Start
-
-### **Step 1: Generate Synthetic Data**
-Creates 200 candidates, 15 jobs, and hiring policies to populate the system.
-```bash
-python scripts/generate_synthetic_data.py
-```
-
-### **Step 2: Build RAG Indices**
-Builds the FAISS vector indices and NetworkX decision graph.
-```bash
-python scripts/build_rag_indices.py
-```
-
-### **Step 3: Run Complete Demo**
-Demonstrates the full pipeline: RAG retrieval, memory tools, and multi-agent debate.
-```bash
-python scripts/full_system_demo.py
-```
-
-### **Step 4: Start API & Dashboard**
-```bash
-# Start API (Terminal 1)
-python api/main.py
-
-# Start Dashboard (Terminal 2)
-streamlit run dashboard/app.py
-```
-- API: `http://localhost:8000/docs`
-- Dashboard: `http://localhost:8501`
-
----
-
-## 💻 Usage Examples
-
-### **Example 1: Multi-Agent Evaluation (Python)**
-
-```python
-from agents.workflow import MultiAgentWorkflow
-from data.schemas import CandidateProfile, JobRequirements
-
-# Load candidate and job
-candidate = CandidateProfile(**candidate_data)
-job = JobRequirements(**job_data)
-
-# Run multi-agent debate
-workflow = MultiAgentWorkflow()
-result = workflow.run(candidate, job)
-
-print(f"Decision: {result['final_decision']}")
-print(f"Score: {result['overall_score']:.1f}/100")
-```
-
-**Output:**
-```
-STEP 1: Evaluator Assessment... ✓
-STEP 2: Advocate's Argument... ✓ (Cited 2 similar hires)
-STEP 3: Skeptic's Analysis... ✓ (Cited 1 similar rejection)
-STEP 4: Moderator's Synthesis... ✓
-
-FINAL DECISION: CONDITIONAL HIRE
-Overall Score: 73.2/100
-```
-
-### **Example 2: RAG Candidate Search**
-
-```python
-from rag.vector_store import VectorStore
-
-vector_store = VectorStore()
-vector_store.load()
-
-results = vector_store.search_similar_candidates(
-    "Senior Python engineer with cloud experience",
-    top_k=5
-)
-
-for r in results:
-    print(f"{r['name']} - {r['similarity_score']:.1%} match")
-```
-
-### **Example 3: MCP Tool Execution**
-
-```python
-from mcp_servers import get_registry
-
-registry = get_registry()
-
-# Execute tool via MCP protocol
-result = registry.execute(
-    "scoring",                    # Server name
-    "calculate_skills_score",     # Tool name
-    candidate_skills=["Python", "AWS"],
-    required_skills=["Python", "AWS", "Docker"]
-)
-```
-
----
-
-## 📡 API Endpoints
-
-The FastAPI server exposes the following endpoints:
+## API Endpoints
 
 | Endpoint | Method | Description |
-| :--- | :--- | :--- |
-| `/evaluate` | `POST` | Run multi-agent evaluation for a candidate/job pair. |
-| `/candidates/search` | `POST` | Semantic search for candidates using RAG. |
-| `/decisions` | `GET` | Retrieve past decisions with filtering. |
-| `/stats` | `GET` | Get system statistics (total evals, hire rate, etc.). |
-| `/health` | `GET` | System health check. |
+|:---|:---|:---|
+| `/api/candidate/analyze` | POST | Upload resume + JD, get full candidate analysis |
+| `/api/hiring/evaluate` | POST | Upload multiple resumes + JD, get ranked evaluations |
+| `/api/github/verify` | POST | Verify a GitHub profile against claimed skills |
+| `/api/health` | GET | Health check |
 
 ---
 
-## 🧪 Testing & Validation
+## Project Structure
 
-The system includes comprehensive automated tests covering all phases.
-
-```bash
-# Run all tests
-pytest tests/ -v
-
-# Test specific components
-python tests/test_phase1_memory.py      # Memory storage
-python tests/test_agent_memory.py       # Agent memory integration
-python tests/test_execution_tracer.py   # Observability & Tracing
+```
+hiring-system/
+├── backend/
+│   ├── api/                          # FastAPI routes & dependency injection
+│   │   ├── main.py                   # App entry, CORS, lifespan (model preload)
+│   │   ├── dependencies.py           # Singletons: LLM, SkillMatcher
+│   │   └── routers/                  # candidate, hiring, github, health
+│   ├── src/hiring_engine/
+│   │   ├── scoring/
+│   │   │   ├── skill_matcher.py      # Semantic embedding matcher
+│   │   │   ├── skills.py             # Skill scoring (semantic + exact fallback)
+│   │   │   ├── overall.py            # Weighted overall score
+│   │   │   ├── experience.py         # Experience gap scoring
+│   │   │   ├── education.py          # Education hierarchy scoring
+│   │   │   └── gap_analysis.py       # Gap detection + roadmap generation
+│   │   ├── counterfactuals/
+│   │   │   └── generator.py          # "What-if" scenario engine
+│   │   ├── parsers/
+│   │   │   ├── resume_parser.py      # PDF → structured profile (LLM)
+│   │   │   └── jd_parser.py          # JD text → structured requirements (LLM)
+│   │   ├── agents/                   # Evaluator, Advocate, Skeptic, Moderator
+│   │   ├── schemas/                  # Pydantic models
+│   │   └── llm/                      # Gemini & Groq clients
+│   └── .env                          # API keys
+├── frontend/
+│   ├── src/
+│   │   ├── app/                      # Next.js pages (candidate, hiring)
+│   │   ├── components/               # ScoreCard, GapAnalysis, Roadmap, etc.
+│   │   └── lib/                      # API client, types
+│   └── .env.local                    # Backend URL config
+└── README.md
 ```
 
 ---
 
-## 📂 Project Structure
+## How Scoring Works
 
+### Skill Matching Pipeline
 ```
-llm_model/
-├── agents/                 # Multi-agent system (Evaluator, Advocate, Skeptic, Moderator)
-├── api/                    # FastAPI REST API endpoints
-├── dashboard/              # Streamlit dashboard application
-├── data/                   # Data schemas, synthetic data, and logs
-│   ├── evaluations/        # Saved evaluation JSONs
-│   └── traces/             # Execution traces
-├── mcp_servers/            # MCP-compliant tool servers (Scoring, Memory)
-├── rag/                    # RAG system (VectorStore, DecisionGraph, HybridRetriever)
-├── scripts/                # Utility scripts (generation, building, demos)
-├── tools/                  # Core deterministic logic
-└── tests/                  # Unit and integration tests
+Resume Skills ──→ Normalize (alias map) ──→ Embed (all-MiniLM-L6-v2)
+                                                      │
+JD Skills ──────→ Normalize (alias map) ──→ Embed ────┤
+                                                      ▼
+                                            Cosine Similarity Matrix
+                                                      │
+                                            Greedy 1:1 Assignment
+                                                      │
+                                    ┌─────────────────┼─────────────────┐
+                                    ▼                 ▼                 ▼
+                              >= 0.70            0.58-0.69          < 0.58
+                             Full Match       Partial Match        No Match
+                             (score=1.0)    (score=similarity)    (score=0)
 ```
+
+### Alias Normalization (built-in, ~80 entries)
+Handles common abbreviations before embedding:
+```
+"JS" → "JavaScript"    "ML" → "Machine Learning"    "K8s" → "Kubernetes"
+"AWS" → "Amazon Web Services"    "CI/CD" → "Continuous Integration..."
+```
+
+### Experience Scoring
+- Perfect match (within 0.5 years): 100
+- Overqualified 2x+: 90 (retention risk flag)
+- Underqualified: penalty of 15-20 pts per year gap
+- Level multiplier: junior=1.1, mid=1.0, senior=0.95, staff=0.9
+
+### Education Scoring
+Hierarchy: High School → Associate → Bootcamp → Bachelor → Master → PhD
+
+Exact match = 100, one above = 95, below = 30-85 based on gap.
 
 ---
 
-## 📈 Performance
+## Performance
 
 | Metric | Value |
-| :--- | :--- |
-| **Candidate Indexing** | ~1-2s for 200 candidates |
-| **Vector Search** | <10ms per query |
-| **Agent Debate** | ~100-200ms (deterministic mode) |
-| **API Response** | <500ms for evaluation |
-| **Memory Usage** | ~500MB with full indices |
+|:---|:---|
+| Embedding model load | ~5s (once at startup) |
+| Skill matching (20 skills) | ~30ms |
+| Full candidate analysis | ~5-8s (includes LLM calls) |
+| Hiring team eval (2 candidates) | ~15-20s |
 
-*Tested on: Python 3.10, 16GB RAM, Intel i7*
+---
 
+## Configuration
 
-## 🙏 Acknowledgments
+### Environment Variables (backend/.env)
 
-- **LangChain** - Agent framework concepts
-- **FAISS** - Vector similarity search
-- **NetworkX** - Graph algorithms
-- **FastAPI** - High-performance API framework
-- **Streamlit** - Data app framework
+| Variable | Required | Description |
+|:---|:---|:---|
+| `GEMINI_API_KEY` | Yes* | Google Gemini API key |
+| `GROQ_API_KEY` | Yes* | Groq API key (*one of Gemini/Groq required) |
+| `GITHUB_TOKEN` | No | GitHub token for higher rate limits (60 → 5000 req/hr) |
+| `CORS_ORIGINS` | No | Allowed origins (default: localhost:3000) |
+
+### Skill Matcher Tuning (skill_matcher.py)
+
+| Constant | Default | Purpose |
+|:---|:---|:---|
+| `FULL_MATCH_THRESHOLD` | 0.70 | Similarity >= this counts as full match |
+| `PARTIAL_MATCH_THRESHOLD` | 0.58 | Similarity >= this counts as partial match |
+| `MODEL_NAME` | all-MiniLM-L6-v2 | Sentence transformer model |
+
+---
+
+## License
+
+MIT
