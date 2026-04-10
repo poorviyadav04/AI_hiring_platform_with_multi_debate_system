@@ -1,0 +1,128 @@
+{
+  "evaluation_id": "EVAL-20260208-174310-CAND-0016",
+  "start_time": "2026-02-08T17:43:10.432460",
+  "end_time": "2026-02-08T17:43:10.471181",
+  "summary": {
+    "evaluation_id": "EVAL-20260208-174310-CAND-0016",
+    "total_events": 12,
+    "total_duration_ms": 38.72275352478027,
+    "event_counts": {
+      "agent_start": 4,
+      "scoring_complete": 1,
+      "agent_end": 4,
+      "final_decision": 1,
+      "memory_save_start": 1,
+      "memory_save_complete": 1
+    },
+    "agent_durations_ms": {
+      "Evaluator": 0.1442432403564453,
+      "Advocate": 23.85234832763672,
+      "Skeptic": 5.3920745849609375,
+      "Moderator": 5.418300628662109
+    },
+    "tool_durations_ms": {}
+  },
+  "events": [
+    {
+      "timestamp": "2026-02-08T17:43:10.433194",
+      "event_type": "agent_start",
+      "agent": "Evaluator",
+      "action": "calculate_scores"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.433329",
+      "event_type": "scoring_complete",
+      "agent": "Evaluator",
+      "action": "calculate_overall_score",
+      "output_data": {
+        "scores": {
+          "overall": 51.56,
+          "skills": 35.0,
+          "experience": 41.8,
+          "education": 95,
+          "interviews": 71.83
+        }
+      }
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.433335",
+      "event_type": "agent_end",
+      "agent": "Evaluator",
+      "action": "calculate_scores",
+      "duration_ms": 0.1442432403564453
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.433486",
+      "event_type": "agent_start",
+      "agent": "Advocate",
+      "action": "build_pro_case"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.457338",
+      "event_type": "agent_end",
+      "agent": "Advocate",
+      "action": "build_pro_case",
+      "duration_ms": 23.85234832763672
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.457740",
+      "event_type": "agent_start",
+      "agent": "Skeptic",
+      "action": "analyze_risks"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.463133",
+      "event_type": "agent_end",
+      "agent": "Skeptic",
+      "action": "analyze_risks",
+      "duration_ms": 5.3920745849609375
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.463500",
+      "event_type": "agent_start",
+      "agent": "Moderator",
+      "action": "make_final_decision"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.468900",
+      "event_type": "final_decision",
+      "agent": "Moderator",
+      "action": "decide",
+      "output_data": {
+        "decision": "reject",
+        "score": 51.56
+      },
+      "metadata": {
+        "component_scores": {
+          "overall": 51.56,
+          "skills": 35.0,
+          "experience": 41.8,
+          "education": 95,
+          "interviews": 71.83
+        }
+      }
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.468917",
+      "event_type": "agent_end",
+      "agent": "Moderator",
+      "action": "make_final_decision",
+      "duration_ms": 5.418300628662109
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.469231",
+      "event_type": "memory_save_start",
+      "agent": "system",
+      "action": "save_evaluation"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:10.470998",
+      "event_type": "memory_save_complete",
+      "agent": "system",
+      "action": "save_evaluation",
+      "output_data": {
+        "evaluation_id": "EVAL-20260208-174310-CAND-0016"
+      }
+    }
+  ]
+}

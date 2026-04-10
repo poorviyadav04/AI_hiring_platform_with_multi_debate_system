@@ -1,0 +1,88 @@
+    
+    def index_counterfactuals(self, counterfactuals: List[Dict]) -> None:
+        """
+        Index counterfactual scenarios for semantic search.
+        
+        Args:
+            counterfactuals: List of counterfactual dicts with keys:
+                - candidate_id, candidate_name, job_title
+                - type, change, explanation
+                - impact, overall_impact
+        """
+        if not counterfactuals:
+            return
+        
+        # Build text representations for embedding
+        texts = []
+        for cf in counterfactuals:
+            # Create rich text for semantic search
+            text = f"{cf['candidate_name']} for {cf['job_title']}: {cf['explanation']}"
+            texts.append(text)
+        
+        # Generate embeddings
+        embeddings = self.model.encode(texts)
+        embeddings = embeddings.astype('float32')
+        
+        # Normalize for cosine similarity
+        faiss.normalize_L2(embeddings)
+        
+        # Create or extend index
+        if self.counterfactual_index is None:
+            self.counterfactual_index = faiss.IndexFlatIP(self.embedding_dim)
+        
+        # Add to index
+        self.counterfactual_index.add(embeddings)
+        
+        # Store metadata
+        for cf in counterfactuals:
+            self.counterfactual_metadata.append(cf)
+        
+        print(f"✅ Indexed {len(counterfactuals)} counterfactuals (total: {len(self.counterfactual_metadata)})")
+    
+    def search_counterfactuals(
+        self, 
+        query: str, 
+        top_k: int = 5,
+        min_impact: float = None
+    ) -> List[Dict]:
+        """
+        Search for relevant counterfactual scenarios.
+        
+        Args:
+            query: Search query (e.g., "how to improve Python skills")
+            top_k: Number of results
+            min_impact: Optional minimum impact filter
+            
+        Returns:
+            List of matching counterfactuals with similarity scores
+        """
+        if self.counterfactual_index is None or self.counterfactual_index.ntotal == 0:
+            print("⚠️ No counterfactuals indexed yet")
+            return []
+        
+        # Embed query
+        query_embedding = self.model.encode([query])[0].astype('float32')
+        query_embedding = np.array([query_embedding])
+        faiss.normalize_L2(query_embedding)
+        
+        # Search
+        scores, indices = self.counterfactual_index.search(
+            query_embedding, 
+            min(top_k * 2, self.counterfactual_index.ntotal)
+        )
+        
+        # Build results
+        results = []
+        for score, idx in zip(scores[0], indices[0]):
+            if idx < len(self.counterfactual_metadata):
+                cf = self.counterfactual_metadata[idx].copy()
+                cf["similarity"] = float(score)
+                
+                # Apply impact filter
+                if min_impact is None or cf.get('overall_impact', 0) >= min_impact:
+                    results.append(cf)
+                
+                if len(results) >= top_k:
+                    break
+        
+        return results

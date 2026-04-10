@@ -1,0 +1,190 @@
+{
+  "evaluation_id": "EVAL-20260208-213052-CAND-0004",
+  "candidate_id": "CAND-0004",
+  "candidate_name": "Carter Williams",
+  "job_id": "JOB-0005",
+  "job_title": "Software Engineer",
+  "overall_score": 64.13,
+  "component_scores": {
+    "overall": 64.13,
+    "skills": 17.5,
+    "experience": 100,
+    "education": 100,
+    "interviews": 80.9
+  },
+  "final_decision": "conditional_hire",
+  "timestamp": "2026-02-08T21:30:52.379401",
+  "debate_transcript": [
+    {
+      "agent": "Evaluator",
+      "role": "evaluator",
+      "content": "OBJECTIVE EVALUATION REPORT\n======================================================================\n\nOVERALL ASSESSMENT:\n  Score: 64.1/100\n  Recommendation Tier: REJECT\n\nCOMPONENT BREAKDOWN:\n  Skills Match:     17.5/100 (40% weight)\n  Experience Fit:   100.0/100 (30% weight)\n  Education Level:  100.0/100 (15% weight)\n  Interview Scores: 80.9/100 (15% weight)\n\nKEY FACTORS:\n\n  Skills:\n    \u26a0\ufe0f  Missing Required: R, Next.js, Cassandra\n    Matched: 1/4\n\n  Experience:\n    Exceeds requirement by 0.4 years\n    Meets Minimum: True\n\n  Education:\n    Level Gap: 0 levels\n    Meets Requirement: True\n\nCONSTRAINT VALIDATION:\n  Overall Compliance: \u2717 FAIL\n  Compliance Rate: 67%\n\n  \u26a0\ufe0f  VIOLATIONS (1):\n    \u2022 Score: overall_score (64.1) below threshold (65.0)\n\n  Decision Recommendation: REVIEW_REQUIRED\n  Requires Escalation: Yes\n\n======================================================================\nEnd of Objective Evaluation\n",
+      "timestamp": "2026-02-08T21:30:46.272341",
+      "metadata": {
+        "scores": {
+          "overall_score": 64.13,
+          "recommendation": "reject",
+          "component_scores": {
+            "skills": 17.5,
+            "experience": 100,
+            "education": 100,
+            "interviews": 80.9
+          },
+          "weights": {
+            "skills": 0.4,
+            "experience": 0.3,
+            "education": 0.15,
+            "interviews": 0.15
+          },
+          "detailed_breakdown": {
+            "skills": {
+              "overall_score": 17.5,
+              "required_match_score": 25.0,
+              "preferred_match_score": 0.0,
+              "matched_required": [
+                "Swift"
+              ],
+              "matched_preferred": [],
+              "missing_required": [
+                "R",
+                "Next.js",
+                "Cassandra"
+              ],
+              "depth_bonus": 0,
+              "match_ratio": 0.25
+            },
+            "experience": {
+              "score": 100,
+              "raw_score": 100,
+              "gap_years": -0.4,
+              "penalty": 0,
+              "level_multiplier": 1.0,
+              "explanation": "Perfect experience match",
+              "meets_minimum": true
+            },
+            "education": {
+              "score": 100,
+              "candidate_level": 4,
+              "required_level": 4,
+              "difference": 0,
+              "meets_requirement": true,
+              "explanation": "Exact match"
+            },
+            "interview_count": 3
+          },
+          "key_factors": {
+            "missing_required_skills": [
+              "R",
+              "Next.js",
+              "Cassandra"
+            ],
+            "experience_gap": -0.4,
+            "education_gap": 0
+          }
+        },
+        "validation": {
+          "all_compliant": false,
+          "compliance_rate": 0.67,
+          "final_decision": "review_required",
+          "violations": [
+            "Score: overall_score (64.1) below threshold (65.0)"
+          ],
+          "warnings": [],
+          "explanation": "Some violations detected (1 violation(s))",
+          "detailed_checks": {
+            "budget": {
+              "compliant": true,
+              "strictly_compliant": true,
+              "status": "within_budget",
+              "risk_level": "low",
+              "margin": 19000.0,
+              "margin_percent": 14.62,
+              "candidate_salary": 111000.0,
+              "budget_range": [
+                85000.0,
+                130000.0
+              ],
+              "absolute_max": 136500.0,
+              "recommendation": "approve",
+              "explanation": "Salary $111,000 is within budget ($19,000 margin)",
+              "requires_vp_approval": false
+            },
+            "experience": {
+              "compliant": true,
+              "status": "meets_requirement",
+              "gap": -0.4,
+              "candidate_years": 4.9,
+              "required_years": 4.5,
+              "explanation": "Candidate has 4.9 years (requires 4.5)"
+            },
+            "scores": {
+              "compliant": false,
+              "failures": [
+                {
+                  "type": "overall_score",
+                  "value": 64.13,
+                  "threshold": 65.0,
+                  "gap": 0.8700000000000045
+                }
+              ],
+              "failure_count": 1,
+              "scores": {
+                "technical": 78.7,
+                "behavioral": 81.9,
+                "overall": 64.13
+              },
+              "thresholds": {
+                "technical": 60.0,
+                "behavioral": 60.0,
+                "overall": 65.0
+              },
+              "explanation": "Fails score thresholds (1 failure(s))"
+            }
+          },
+          "requires_escalation": true
+        }
+      }
+    },
+    {
+      "agent": "Advocate",
+      "role": "advocate",
+      "content": "Based on the evaluation, I advocate for this candidate.\n\nKey Strengths:\n\u2022 Strong technical skills that align with job requirements\n\u2022 Relevant experience in the field\n\u2022 Positive interview performance indicates good culture fit\n\nWhile there may be some gaps, these can be addressed through:\n\u2022 Structured onboarding and training programs\n\u2022 Mentorship from senior team members\n\u2022 On-the-job learning opportunities\n\nI recommend moving forward with this candidate as they show strong potential.\n\n[Note: This is a fallback response. Start Ollama for natural language debates.]",
+      "timestamp": "2026-02-08T21:30:48.312453",
+      "metadata": {}
+    },
+    {
+      "agent": "Skeptic",
+      "role": "skeptic",
+      "content": "I have several concerns about this candidate:\n\nRisk Factors:\n\u2022 Skill gaps may require significant training investment\n\u2022 Experience level might not match immediate job requirements\n\u2022 Potential challenges in meeting performance expectations\n\nQuestions to Consider:\n\u2022 Can we realistically close the gaps within an acceptable timeframe?\n\u2022 Are there stronger candidates in our pipeline?\n\u2022 What's the opportunity cost of this hire?\n\nI recommend careful consideration before proceeding.\n\n[Note: This is a fallback response. Start Ollama for natural language debates.]",
+      "timestamp": "2026-02-08T21:30:50.348225",
+      "metadata": {}
+    },
+    {
+      "agent": "Moderator",
+      "role": "moderator",
+      "content": "Based on the evaluation, I advocate for this candidate.\n\nKey Strengths:\n\u2022 Strong technical skills that align with job requirements\n\u2022 Relevant experience in the field\n\u2022 Positive interview performance indicates good culture fit\n\nWhile there may be some gaps, these can be addressed through:\n\u2022 Structured onboarding and training programs\n\u2022 Mentorship from senior team members\n\u2022 On-the-job learning opportunities\n\nI recommend moving forward with this candidate as they show strong potential.\n\n[Note: This is a fallback response. Start Ollama for natural language debates.]",
+      "timestamp": "2026-02-08T21:30:52.378891",
+      "metadata": {
+        "decision": "conditional_hire"
+      }
+    }
+  ],
+  "metadata": {
+    "constraints": {
+      "policy_id": "POLICY-001",
+      "policy_name": "Standard Hiring Policy 2024",
+      "max_budget_overage_percent": 5.0,
+      "require_vp_approval_above": 150000.0,
+      "allow_experience_gap": true,
+      "max_experience_gap_years": 1.0,
+      "require_work_authorization": true,
+      "require_background_check": true,
+      "equal_opportunity_employer": true,
+      "prioritize_internal_candidates": true,
+      "diversity_hiring_goals": true,
+      "min_technical_score": 60.0,
+      "min_behavioral_score": 60.0,
+      "min_overall_score": 65.0
+    }
+  }
+}

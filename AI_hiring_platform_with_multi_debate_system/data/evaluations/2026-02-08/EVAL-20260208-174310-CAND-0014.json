@@ -1,0 +1,184 @@
+{
+  "evaluation_id": "EVAL-20260208-174310-CAND-0014",
+  "candidate_id": "CAND-0014",
+  "candidate_name": "Henry Jones",
+  "job_id": "JOB-0001",
+  "job_title": "Senior Data Scientist",
+  "overall_score": 66.69,
+  "component_scores": {
+    "overall": 66.69,
+    "skills": 29.5,
+    "experience": 95.0,
+    "education": 95,
+    "interviews": 80.9
+  },
+  "final_decision": "conditional_hire",
+  "timestamp": "2026-02-08T17:43:10.389375",
+  "debate_transcript": [
+    {
+      "agent": "Evaluator",
+      "role": "evaluator",
+      "content": "OBJECTIVE EVALUATION REPORT\n======================================================================\n\nOVERALL ASSESSMENT:\n  Score: 66.7/100\n  Recommendation Tier: CONDITIONAL_HIRE\n\nCOMPONENT BREAKDOWN:\n  Skills Match:     29.5/100 (40% weight)\n  Experience Fit:   95.0/100 (30% weight)\n  Education Level:  95.0/100 (15% weight)\n  Interview Scores: 80.9/100 (15% weight)\n\nKEY FACTORS:\n\n  Skills:\n    \u26a0\ufe0f  Missing Required: Kotlin, Express.js, Redis\n    Matched: 1/4\n\n  Experience:\n    Exceeds requirement by 0.2 years\n    Meets Minimum: True\n\n  Education:\n    Level Gap: 3 levels\n    Meets Requirement: True\n\nCONSTRAINT VALIDATION:\n  Overall Compliance: \u2713 PASS\n  Compliance Rate: 100%\n\n  Decision Recommendation: APPROVE\n  Requires Escalation: No\n\n======================================================================\nEnd of Objective Evaluation\n",
+      "timestamp": "2026-02-08T17:43:10.358760",
+      "metadata": {
+        "scores": {
+          "overall_score": 66.69,
+          "recommendation": "conditional_hire",
+          "component_scores": {
+            "skills": 29.5,
+            "experience": 95.0,
+            "education": 95,
+            "interviews": 80.9
+          },
+          "weights": {
+            "skills": 0.4,
+            "experience": 0.3,
+            "education": 0.15,
+            "interviews": 0.15
+          },
+          "detailed_breakdown": {
+            "skills": {
+              "overall_score": 29.5,
+              "required_match_score": 25.0,
+              "preferred_match_score": 40.0,
+              "matched_required": [
+                "PHP"
+              ],
+              "matched_preferred": [
+                "Terraform",
+                "SQLite"
+              ],
+              "missing_required": [
+                "Kotlin",
+                "Express.js",
+                "Redis"
+              ],
+              "depth_bonus": 0,
+              "match_ratio": 0.25
+            },
+            "experience": {
+              "score": 95.0,
+              "raw_score": 100,
+              "gap_years": -0.2,
+              "penalty": 0,
+              "level_multiplier": 0.95,
+              "explanation": "Perfect experience match",
+              "meets_minimum": true
+            },
+            "education": {
+              "score": 95,
+              "candidate_level": 4,
+              "required_level": 1,
+              "difference": 3,
+              "meets_requirement": true,
+              "explanation": "Significantly exceeds requirements"
+            },
+            "interview_count": 3
+          },
+          "key_factors": {
+            "missing_required_skills": [
+              "Kotlin",
+              "Express.js",
+              "Redis"
+            ],
+            "experience_gap": -0.2,
+            "education_gap": 3
+          }
+        },
+        "validation": {
+          "all_compliant": true,
+          "compliance_rate": 1.0,
+          "final_decision": "approve",
+          "violations": [],
+          "warnings": [],
+          "explanation": "All constraints satisfied",
+          "detailed_checks": {
+            "budget": {
+              "compliant": true,
+              "strictly_compliant": true,
+              "status": "within_budget",
+              "risk_level": "low",
+              "margin": 41000.0,
+              "margin_percent": 22.78,
+              "candidate_salary": 139000.0,
+              "budget_range": [
+                130000.0,
+                180000.0
+              ],
+              "absolute_max": 189000.0,
+              "recommendation": "approve",
+              "explanation": "Salary $139,000 is within budget ($41,000 margin)",
+              "requires_vp_approval": false
+            },
+            "experience": {
+              "compliant": true,
+              "status": "meets_requirement",
+              "gap": -0.2,
+              "candidate_years": 7.3,
+              "required_years": 7.1,
+              "explanation": "Candidate has 7.3 years (requires 7.1)"
+            },
+            "scores": {
+              "compliant": true,
+              "failures": [],
+              "failure_count": 0,
+              "scores": {
+                "technical": 80.6,
+                "behavioral": 80.4,
+                "overall": 66.69
+              },
+              "thresholds": {
+                "technical": 60.0,
+                "behavioral": 60.0,
+                "overall": 65.0
+              },
+              "explanation": "Passes score thresholds (0 failure(s))"
+            }
+          },
+          "requires_escalation": false
+        }
+      }
+    },
+    {
+      "agent": "Advocate",
+      "role": "advocate",
+      "content": "ADVOCACY: CASE FOR HIRING HENRY JONES\n======================================================================\n\nEXECUTIVE SUMMARY:\nI strongly advocate for hiring Henry Jones for the Senior Data Scientist position.\nThis candidate demonstrates significant strengths that align well with our needs.\n\nKEY STRENGTHS:\n\n1. TECHNICAL PROFICIENCY\n   \u2713 Possesses 1 of 4 required skills\n   \u2713 Core competencies: PHP\n   \u2713 Brings bonus expertise: C++, Django, FastAPI\n\n2. EXPERIENCE & GROWTH POTENTIAL\n   \u2713 Meets experience requirement (7.3 years)\n   \u2713 Proven track record in the industry\n\n3. INTERVIEW PERFORMANCE\n   \u2713 Strong interview scores (81/100)\n   \u2713 Technical interview: 81/100 - Excellent problem-solving\n   \u2713 Behavioral interview: 80/100 - Great culture fit\n\n4. BUDGET ALIGNMENT\n   \u2713 Salary expectation ($139,000.0) within budget\n   \u2713 Provides $41,000.0 budget cushion for bonuses/benefits\n\n5. HOLISTIC ASSESSMENT\n   \u2713 Overall score of 67/100 - Good potential\n   \u2713 With proper onboarding, can exceed expectations\n\nWHY THIS CANDIDATE STANDS OUT:\n\u2022 Hybrid preference aligns with our hybrid model\n\u2022 Educational background (BA Computer Science) provides strong foundation\n\u2022 Diverse skill set brings cross-functional value\n\nRISK MITIGATION:\n\u2022 Any skill gaps can be addressed through our robust training program\n\u2022 90-day onboarding plan will ensure rapid productivity\n\u2022 Regular check-ins and mentorship will accelerate growth\n\nRECOMMENDATION:\nBased on the comprehensive evaluation, I recommend we PROCEED with an offer to Henry Jones.\nThis candidate represents a strong value proposition with clear upside potential.\n\n======================================================================\n",
+      "timestamp": "2026-02-08T17:43:10.380338",
+      "metadata": {}
+    },
+    {
+      "agent": "Skeptic",
+      "role": "skeptic",
+      "content": "CRITICAL ANALYSIS: RISKS & CONCERNS FOR HENRY JONES\n======================================================================\n\nEXECUTIVE SUMMARY:\nWhile this candidate shows some promise, I must highlight several concerns\nthat warrant careful consideration before extending an offer.\n\nIDENTIFIED CONCERNS:\n\n1. CRITICAL SKILL GAPS\n   \u26a0\ufe0f  Missing 3 required skills: Kotlin, Express.js, Redis\n   \u2022 These are REQUIRED, not preferred\n   \u2022 Learning curve will delay productivity\n   \u2022 Onboarding cost and time investment needed\n   \u2022 Risk: May struggle with immediate responsibilities\n\n2. BELOW THRESHOLD PERFORMANCE\n   \u26a0\ufe0f  Overall score: 67/100 (below 'Hire' threshold of 75)\n   \u2022 Skills score: 30/100 - Weak match\n   \u2022 Risk: May not meet job expectations\n\nRISK ASSESSMENT:\n  \ud83d\udfe1 MODERATE RISK - Several concerns need addressing\n     Proceed with caution and mitigation plan\n\nQUESTIONS TO CONSIDER:\n\u2022 Can we realistically close the skill gaps within 3-6 months?\n\u2022 Do we have mentorship resources to support this hire?\n\u2022 Are there stronger candidates in our pipeline?\n\u2022 What's our risk tolerance for this role?\n\u2022 Have we exhausted our recruiting channels?\n\nRECOMMENDATION:\n\nCONCLUSION:\nWhile Henry Jones has some positive qualities, the identified gaps and risks require careful consideration before proceeding.\n\n\ud83d\udcda HISTORICAL PRECEDENT:\nWe have rejected 3 similar candidate(s) before:\n  1. Elizabeth White for Senior Data Scientist (Score: 43.8, 2026-02-08)\n  2. Owen Thomas for Senior Data Scientist (Score: 38.7, 2026-02-08)\n  3. Emily Thompson for Senior Data Scientist (Score: 41.2, 2026-02-08)\nThese past decisions support a cautious approach.\n\n======================================================================\n",
+      "timestamp": "2026-02-08T17:43:10.384401",
+      "metadata": {}
+    },
+    {
+      "agent": "Moderator",
+      "role": "moderator",
+      "content": "FINAL HIRING DECISION: HENRY JONES\n======================================================================\n\nSYNTHESIS OF MULTI-AGENT DEBATE:\n\n1. EVALUATOR'S ASSESSMENT:\n   Overall Score: 66.7/100\n   Skills: 30 | Experience: 95 | Education: 95 | Interviews: 81\n   Constraint Compliance: 100%\n\n2. ADVOCATE'S PERSPECTIVE:\n   \u2713 Highlights candidate strengths and potential\n   \u2713 Emphasizes growth opportunities and value-add\n   \u2713 Proposes mitigation for gaps through training\n\n3. SKEPTIC'S CONCERNS:\n   \u26a0\ufe0f  Identifies risks and weaknesses\n   \u26a0\ufe0f  Challenges assumptions about candidate readiness\n   \u26a0\ufe0f  Questions opportunity cost vs other candidates\n\nDECISION FRAMEWORK:\n  ~ Score (67) meets threshold\n  ~ Some concerns but manageable with mitigation\n  ~ Requires specific conditions before offer\n\n======================================================================\nFINAL DECISION: CONDITIONAL HIRE\n======================================================================\n\nRATIONALE:\nI recommend CONDITIONAL APPROVAL to hire Henry Jones.\n\nWhile this candidate shows promise, specific conditions must be met:\n\nCONDITIONS:\n1. Commit to 30-60-90 day skill development plan\n\nONLY proceed with offer if ALL conditions are satisfied.\n\n======================================================================\nEnd of Decision Synthesis\n\n\ud83d\udcda CONSISTENCY CHECK:\n\u2705 Decision is CONSISTENT with 11 similar past case(s).\n",
+      "timestamp": "2026-02-08T17:43:10.389026",
+      "metadata": {
+        "decision": "conditional_hire"
+      }
+    }
+  ],
+  "metadata": {
+    "constraints": {
+      "policy_id": "POL-DEFAULT",
+      "policy_name": "Standard Hiring Policy",
+      "max_budget_overage_percent": 5.0,
+      "require_vp_approval_above": 150000,
+      "allow_experience_gap": true,
+      "max_experience_gap_years": 1.0,
+      "require_work_authorization": true,
+      "require_background_check": true,
+      "equal_opportunity_employer": true,
+      "prioritize_internal_candidates": true,
+      "diversity_hiring_goals": true,
+      "min_technical_score": 60.0,
+      "min_behavioral_score": 60.0,
+      "min_overall_score": 65.0
+    }
+  }
+}

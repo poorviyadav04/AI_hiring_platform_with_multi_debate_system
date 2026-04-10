@@ -1,0 +1,178 @@
+{
+  "evaluation_id": "EVAL-20260208-170637-CAND-0002",
+  "candidate_id": "CAND-0002",
+  "candidate_name": "Joseph Wilson",
+  "job_id": "JOB-0001",
+  "job_title": "Senior Data Scientist",
+  "overall_score": 47.11,
+  "component_scores": {
+    "skills": 23.5,
+    "experience": 38.0,
+    "education": 95,
+    "interviews": 80.43
+  },
+  "final_decision": "reject",
+  "timestamp": "2026-02-08T17:06:37.793561",
+  "debate_transcript": [
+    {
+      "agent": "Evaluator",
+      "role": "evaluator",
+      "content": "OBJECTIVE EVALUATION REPORT\n======================================================================\n\nOVERALL ASSESSMENT:\n  Score: 47.1/100\n  Recommendation Tier: STRONG_REJECT\n\nCOMPONENT BREAKDOWN:\n  Skills Match:     23.5/100 (40% weight)\n  Experience Fit:   38.0/100 (30% weight)\n  Education Level:  95.0/100 (15% weight)\n  Interview Scores: 80.4/100 (15% weight)\n\nKEY FACTORS:\n\n  Skills:\n    \u26a0\ufe0f  Missing Required: Kotlin, PHP, Redis\n    Matched: 1/4\n\n  Experience:\n    Gap: 3.4 years below requirement\n    Meets Minimum: False\n\n  Education:\n    Level Gap: 3 levels\n    Meets Requirement: True\n\nCONSTRAINT VALIDATION:\n  Overall Compliance: \u2717 FAIL\n  Compliance Rate: 0%\n\n  \u26a0\ufe0f  VIOLATIONS (3):\n    \u2022 Budget: Salary $102,000 is below minimum budget (saves $28,000)\n    \u2022 Experience: Candidate has 3.7 years, 3.4 year gap exceeds policy\n    \u2022 Score: overall_score (47.1) below threshold (65.0)\n\n  Decision Recommendation: REJECT\n  Requires Escalation: Yes\n\n======================================================================\nEnd of Objective Evaluation\n",
+      "timestamp": "2026-02-08T17:06:37.788179",
+      "metadata": {
+        "scores": {
+          "overall_score": 47.11,
+          "recommendation": "strong_reject",
+          "component_scores": {
+            "skills": 23.5,
+            "experience": 38.0,
+            "education": 95,
+            "interviews": 80.43
+          },
+          "weights": {
+            "skills": 0.4,
+            "experience": 0.3,
+            "education": 0.15,
+            "interviews": 0.15
+          },
+          "detailed_breakdown": {
+            "skills": {
+              "overall_score": 23.5,
+              "required_match_score": 25.0,
+              "preferred_match_score": 20.0,
+              "matched_required": [
+                "Express.js"
+              ],
+              "matched_preferred": [
+                "CloudFormation"
+              ],
+              "missing_required": [
+                "Kotlin",
+                "PHP",
+                "Redis"
+              ],
+              "depth_bonus": 0,
+              "match_ratio": 0.25
+            },
+            "experience": {
+              "score": 38.0,
+              "raw_score": 40,
+              "gap_years": 3.4,
+              "penalty": 68.0,
+              "level_multiplier": 0.95,
+              "explanation": "Below requirements by 3.4 years (exceeds 1.0 year tolerance)",
+              "meets_minimum": false
+            },
+            "education": {
+              "score": 95,
+              "candidate_level": 4,
+              "required_level": 1,
+              "difference": 3,
+              "meets_requirement": true,
+              "explanation": "Significantly exceeds requirements"
+            },
+            "interview_count": 3
+          },
+          "key_factors": {
+            "missing_required_skills": [
+              "Kotlin",
+              "PHP",
+              "Redis"
+            ],
+            "experience_gap": 3.4,
+            "education_gap": 3
+          }
+        },
+        "validation": {
+          "all_compliant": false,
+          "compliance_rate": 0.0,
+          "final_decision": "reject",
+          "violations": [
+            "Budget: Salary $102,000 is below minimum budget (saves $28,000)",
+            "Experience: Candidate has 3.7 years, 3.4 year gap exceeds policy",
+            "Score: overall_score (47.1) below threshold (65.0)"
+          ],
+          "warnings": [],
+          "explanation": "Multiple violations detected (3 violation(s))",
+          "detailed_checks": {
+            "budget": {
+              "compliant": false,
+              "strictly_compliant": false,
+              "status": "under_budget",
+              "risk_level": "low",
+              "margin": 28000.0,
+              "margin_percent": 21.54,
+              "candidate_salary": 102000.0,
+              "budget_range": [
+                130000.0,
+                180000.0
+              ],
+              "absolute_max": 189000.0,
+              "recommendation": "approve",
+              "explanation": "Salary $102,000 is below minimum budget (saves $28,000)",
+              "requires_vp_approval": false
+            },
+            "experience": {
+              "compliant": false,
+              "status": "below_requirement",
+              "gap": 3.4,
+              "candidate_years": 3.7,
+              "required_years": 7.1,
+              "explanation": "Candidate has 3.7 years, 3.4 year gap exceeds policy"
+            },
+            "scores": {
+              "compliant": false,
+              "failures": [
+                {
+                  "type": "overall_score",
+                  "value": 47.11,
+                  "threshold": 65.0,
+                  "gap": 17.89
+                }
+              ],
+              "failure_count": 1,
+              "scores": {
+                "technical": 74.9,
+                "behavioral": 87.3,
+                "overall": 47.11
+              },
+              "thresholds": {
+                "technical": 60.0,
+                "behavioral": 60.0,
+                "overall": 65.0
+              },
+              "explanation": "Fails score thresholds (1 failure(s))"
+            }
+          },
+          "requires_escalation": true
+        }
+      }
+    },
+    {
+      "agent": "Advocate",
+      "role": "advocate",
+      "content": "ADVOCACY: CASE FOR HIRING JOSEPH WILSON\n======================================================================\n\nEXECUTIVE SUMMARY:\nI strongly advocate for hiring Joseph Wilson for the Senior Data Scientist position.\nThis candidate demonstrates significant strengths that align well with our needs.\n\nKEY STRENGTHS:\n\n1. TECHNICAL PROFICIENCY\n   \u2713 Possesses 1 of 4 required skills\n   \u2713 Core competencies: Express.js\n   \u2713 Brings bonus expertise: C#, Scala, Ruby on Rails\n\n2. EXPERIENCE & GROWTH POTENTIAL\n   \u2713 Strong foundation with 3.7 years of hands-on experience\n   \u2713 Quick learner - the 3.4 year gap can be bridged with mentorship\n   \u2713 Fresh perspective and hunger to prove themselves\n\n3. INTERVIEW PERFORMANCE\n   \u2713 Strong interview scores (80/100)\n   \u2713 Behavioral interview: 87/100 - Great culture fit\n\n4. BUDGET ALIGNMENT\n   \u2713 Salary expectation ($102,000.0) within budget\n   \u2713 Provides $78,000.0 budget cushion for bonuses/benefits\n\n5. HOLISTIC ASSESSMENT\n   \u2022 Score of 47/100 - Diamond in the rough\n   \u2713 Numbers don't tell the whole story - consider intangibles\n\nWHY THIS CANDIDATE STANDS OUT:\n\u2022 Onsite preference aligns with our hybrid model\n\u2022 Educational background (BS Information Technology) provides strong foundation\n\u2022 Diverse skill set brings cross-functional value\n\nRISK MITIGATION:\n\u2022 Any skill gaps can be addressed through our robust training program\n\u2022 90-day onboarding plan will ensure rapid productivity\n\u2022 Regular check-ins and mentorship will accelerate growth\n\nRECOMMENDATION:\nBased on the comprehensive evaluation, I recommend we PROCEED with an offer to Joseph Wilson.\nThis candidate represents a strong value proposition with clear upside potential.\n\n======================================================================\n",
+      "timestamp": "2026-02-08T17:06:37.789471",
+      "metadata": {}
+    },
+    {
+      "agent": "Skeptic",
+      "role": "skeptic",
+      "content": "CRITICAL ANALYSIS: RISKS & CONCERNS FOR JOSEPH WILSON\n======================================================================\n\nEXECUTIVE SUMMARY:\nWhile this candidate shows some promise, I must highlight several concerns\nthat warrant careful consideration before extending an offer.\n\nIDENTIFIED CONCERNS:\n\n1. CRITICAL SKILL GAPS\n   \u26a0\ufe0f  Missing 3 required skills: Kotlin, PHP, Redis\n   \u2022 These are REQUIRED, not preferred\n   \u2022 Learning curve will delay productivity\n   \u2022 Onboarding cost and time investment needed\n   \u2022 Risk: May struggle with immediate responsibilities\n\n2. EXPERIENCE DEFICIT\n   \u26a0\ufe0f  3.4 years below minimum requirement\n   \u2022 May lack seasoned judgment for senior role\n   \u2022 Increased supervision needed\n   \u2022 Risk: May be overwhelmed by seniority expectations\n\n3. BUDGET CONCERNS\n   \u26a0\ufe0f  UNDER_BUDGET\n   \u2022 Salary: $102,000.0 vs Budget: $180,000.0\n   \u2022 Risk: Budget overrun or failed negotiation\n\n4. BELOW THRESHOLD PERFORMANCE\n   \u26a0\ufe0f  Overall score: 47/100 (below 'Hire' threshold of 75)\n   \u2022 Skills score: 24/100 - Weak match\n   \u2022 Experience score: 38/100 - Questionable fit\n   \u2022 Risk: May not meet job expectations\n\n5. POLICY VIOLATIONS\n   \u26a0\ufe0f  Budget: Salary $102,000 is below minimum budget (saves $28,000)\n   \u26a0\ufe0f  Experience: Candidate has 3.7 years, 3.4 year gap exceeds policy\n   \u26a0\ufe0f  Score: overall_score (47.1) below threshold (65.0)\n   \u2022 Requires waiver or exception\n   \u2022 Sets precedent for future hires\n   \u2022 Risk: Compliance and consistency issues\n\nRISK ASSESSMENT:\n  \ud83d\udd34 HIGH RISK - Multiple serious concerns identified\n     Consider alternative candidates\n\nQUESTIONS TO CONSIDER:\n\u2022 Can we realistically close the skill gaps within 3-6 months?\n\u2022 Do we have mentorship resources to support this hire?\n\u2022 Are there stronger candidates in our pipeline?\n\u2022 What's our risk tolerance for this role?\n\u2022 Have we exhausted our recruiting channels?\n\nRECOMMENDATION:\nExercise CAUTION. Consider passing or requiring additional\nevaluation steps before making an offer to Joseph Wilson.\n\nCONCLUSION:\nWhile Joseph Wilson has some positive qualities, the identified gaps and risks require careful consideration before proceeding.\n\n\ud83d\udcda HISTORICAL PRECEDENT:\nWe have rejected 2 similar candidate(s) before:\n  1. Elizabeth Hernandez for Senior Data Scientist (Score: 37.7, 2026-02-08)\n  2. Elizabeth Hernandez for Senior Data Scientist (Score: 37.7, 2026-02-08)\nThese past decisions support a cautious approach.\n\n======================================================================\n",
+      "timestamp": "2026-02-08T17:06:37.790667",
+      "metadata": {}
+    },
+    {
+      "agent": "Moderator",
+      "role": "moderator",
+      "content": "FINAL HIRING DECISION: JOSEPH WILSON\n======================================================================\n\nSYNTHESIS OF MULTI-AGENT DEBATE:\n\n1. EVALUATOR'S ASSESSMENT:\n   Overall Score: 47.1/100\n   Skills: 24 | Experience: 38 | Education: 95 | Interviews: 80\n   Constraint Compliance: 0%\n   Violations: 3\n\n2. ADVOCATE'S PERSPECTIVE:\n   \u2713 Highlights candidate strengths and potential\n   \u2713 Emphasizes growth opportunities and value-add\n   \u2713 Proposes mitigation for gaps through training\n\n3. SKEPTIC'S CONCERNS:\n   \u26a0\ufe0f  Identifies risks and weaknesses\n   \u26a0\ufe0f  Challenges assumptions about candidate readiness\n   \u26a0\ufe0f  Questions opportunity cost vs other candidates\n\nDECISION FRAMEWORK:\n  \u2717 Score (47) far below acceptable threshold\n  \u2717 Fundamental fit issues cannot be reconciled\n\n======================================================================\nFINAL DECISION: REJECT\n======================================================================\n\nRATIONALE:\nI recommend we DO NOT EXTEND AN OFFER to Joseph Wilson.\n\nAfter careful consideration:\n\u2022 Objective metrics indicate poor fit for role requirements\n\u2022 Risks and gaps are too significant to mitigate effectively\n\u2022 Better candidates likely available in market\n\nNEXT STEPS:\n1. Send professional rejection notice\n2. Continue recruiting efforts\n3. Review job requirements if pattern of rejections\n4. Consider expanding candidate sourcing channels\n\n======================================================================\nEnd of Decision Synthesis\n\n\ud83d\udcda CONSISTENCY CHECK:\n\u2705 Decision is CONSISTENT with 2 similar past case(s).\n",
+      "timestamp": "2026-02-08T17:06:37.791856",
+      "metadata": {
+        "decision": "reject"
+      }
+    }
+  ],
+  "metadata": {
+    "constraints": "POL-DEFAULT"
+  }
+}

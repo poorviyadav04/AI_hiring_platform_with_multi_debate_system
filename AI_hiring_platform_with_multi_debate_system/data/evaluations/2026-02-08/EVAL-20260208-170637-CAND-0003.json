@@ -1,0 +1,174 @@
+{
+  "evaluation_id": "EVAL-20260208-170637-CAND-0003",
+  "candidate_id": "CAND-0003",
+  "candidate_name": "Emily Thompson",
+  "job_id": "JOB-0002",
+  "job_title": "Full-Stack Developer",
+  "overall_score": 61.37,
+  "component_scores": {
+    "skills": 17.5,
+    "experience": 95.0,
+    "education": 100,
+    "interviews": 72.47
+  },
+  "final_decision": "reject",
+  "timestamp": "2026-02-08T17:06:37.822434",
+  "debate_transcript": [
+    {
+      "agent": "Evaluator",
+      "role": "evaluator",
+      "content": "OBJECTIVE EVALUATION REPORT\n======================================================================\n\nOVERALL ASSESSMENT:\n  Score: 61.4/100\n  Recommendation Tier: REJECT\n\nCOMPONENT BREAKDOWN:\n  Skills Match:     17.5/100 (40% weight)\n  Experience Fit:   95.0/100 (30% weight)\n  Education Level:  100.0/100 (15% weight)\n  Interview Scores: 72.5/100 (15% weight)\n\nKEY FACTORS:\n\n  Skills:\n    \u26a0\ufe0f  Missing Required: Swift, Angular, Elasticsearch\n    Matched: 1/4\n\n  Experience:\n    Exceeds requirement by 1.7 years\n    Meets Minimum: True\n\n  Education:\n    Level Gap: 1 levels\n    Meets Requirement: True\n\nCONSTRAINT VALIDATION:\n  Overall Compliance: \u2717 FAIL\n  Compliance Rate: 67%\n\n  \u26a0\ufe0f  VIOLATIONS (1):\n    \u2022 Score: overall_score (61.4) below threshold (65.0)\n\n  Decision Recommendation: REVIEW_REQUIRED\n  Requires Escalation: Yes\n\n======================================================================\nEnd of Objective Evaluation\n",
+      "timestamp": "2026-02-08T17:06:37.800332",
+      "metadata": {
+        "scores": {
+          "overall_score": 61.37,
+          "recommendation": "reject",
+          "component_scores": {
+            "skills": 17.5,
+            "experience": 95.0,
+            "education": 100,
+            "interviews": 72.47
+          },
+          "weights": {
+            "skills": 0.4,
+            "experience": 0.3,
+            "education": 0.15,
+            "interviews": 0.15
+          },
+          "detailed_breakdown": {
+            "skills": {
+              "overall_score": 17.5,
+              "required_match_score": 25.0,
+              "preferred_match_score": 0.0,
+              "matched_required": [
+                "Scala"
+              ],
+              "matched_preferred": [],
+              "missing_required": [
+                "Swift",
+                "Angular",
+                "Elasticsearch"
+              ],
+              "depth_bonus": 0,
+              "match_ratio": 0.25
+            },
+            "experience": {
+              "score": 95.0,
+              "raw_score": 95,
+              "gap_years": -1.7,
+              "penalty": 5,
+              "level_multiplier": 1.0,
+              "explanation": "Slightly overqualified",
+              "meets_minimum": true
+            },
+            "education": {
+              "score": 100,
+              "candidate_level": 5,
+              "required_level": 4,
+              "difference": 1,
+              "meets_requirement": true,
+              "explanation": "Exceeds requirements by one level"
+            },
+            "interview_count": 3
+          },
+          "key_factors": {
+            "missing_required_skills": [
+              "Swift",
+              "Angular",
+              "Elasticsearch"
+            ],
+            "experience_gap": -1.7,
+            "education_gap": 1
+          }
+        },
+        "validation": {
+          "all_compliant": false,
+          "compliance_rate": 0.67,
+          "final_decision": "review_required",
+          "violations": [
+            "Score: overall_score (61.4) below threshold (65.0)"
+          ],
+          "warnings": [],
+          "explanation": "Some violations detected (1 violation(s))",
+          "detailed_checks": {
+            "budget": {
+              "compliant": true,
+              "strictly_compliant": true,
+              "status": "within_budget",
+              "risk_level": "low",
+              "margin": 4000.0,
+              "margin_percent": 3.08,
+              "candidate_salary": 126000.0,
+              "budget_range": [
+                85000.0,
+                130000.0
+              ],
+              "absolute_max": 136500.0,
+              "recommendation": "approve",
+              "explanation": "Salary $126,000 is within budget ($4,000 margin)",
+              "requires_vp_approval": false
+            },
+            "experience": {
+              "compliant": true,
+              "status": "meets_requirement",
+              "gap": -1.7,
+              "candidate_years": 4.5,
+              "required_years": 2.8,
+              "explanation": "Candidate has 4.5 years (requires 2.8)"
+            },
+            "scores": {
+              "compliant": false,
+              "failures": [
+                {
+                  "type": "overall_score",
+                  "value": 61.37,
+                  "threshold": 65.0,
+                  "gap": 3.6300000000000026
+                }
+              ],
+              "failure_count": 1,
+              "scores": {
+                "technical": 73.4,
+                "behavioral": 78.7,
+                "overall": 61.37
+              },
+              "thresholds": {
+                "technical": 60.0,
+                "behavioral": 60.0,
+                "overall": 65.0
+              },
+              "explanation": "Fails score thresholds (1 failure(s))"
+            }
+          },
+          "requires_escalation": true
+        }
+      }
+    },
+    {
+      "agent": "Advocate",
+      "role": "advocate",
+      "content": "ADVOCACY: CASE FOR HIRING EMILY THOMPSON\n======================================================================\n\nEXECUTIVE SUMMARY:\nI strongly advocate for hiring Emily Thompson for the Full-Stack Developer position.\nThis candidate demonstrates significant strengths that align well with our needs.\n\nKEY STRENGTHS:\n\n1. TECHNICAL PROFICIENCY\n   \u2713 Possesses 1 of 4 required skills\n   \u2713 Core competencies: Scala\n   \u2713 Brings bonus expertise: Ruby, Next.js, React\n\n2. EXPERIENCE & GROWTH POTENTIAL\n   \u2713 Meets experience requirement (4.5 years)\n   \u2713 Proven track record in the industry\n\n3. INTERVIEW PERFORMANCE\n   \u2713 Strong interview scores (72/100)\n   \u2713 Behavioral interview: 79/100 - Great culture fit\n\n4. BUDGET ALIGNMENT\n   \u2713 Salary expectation ($126,000.0) within budget\n\n5. HOLISTIC ASSESSMENT\n   \u2022 Score of 61/100 - Diamond in the rough\n   \u2713 Numbers don't tell the whole story - consider intangibles\n\nWHY THIS CANDIDATE STANDS OUT:\n\u2022 Remote preference aligns with our remote model\n\u2022 Educational background (MS Computer Science) provides strong foundation\n\u2022 Diverse skill set brings cross-functional value\n\nRISK MITIGATION:\n\u2022 Any skill gaps can be addressed through our robust training program\n\u2022 90-day onboarding plan will ensure rapid productivity\n\u2022 Regular check-ins and mentorship will accelerate growth\n\nRECOMMENDATION:\nBased on the comprehensive evaluation, I recommend we PROCEED with an offer to Emily Thompson.\nThis candidate represents a strong value proposition with clear upside potential.\n\n======================================================================\n",
+      "timestamp": "2026-02-08T17:06:37.819578",
+      "metadata": {}
+    },
+    {
+      "agent": "Skeptic",
+      "role": "skeptic",
+      "content": "CRITICAL ANALYSIS: RISKS & CONCERNS FOR EMILY THOMPSON\n======================================================================\n\nEXECUTIVE SUMMARY:\nWhile this candidate shows some promise, I must highlight several concerns\nthat warrant careful consideration before extending an offer.\n\nIDENTIFIED CONCERNS:\n\n1. CRITICAL SKILL GAPS\n   \u26a0\ufe0f  Missing 3 required skills: Swift, Angular, Elasticsearch\n   \u2022 These are REQUIRED, not preferred\n   \u2022 Learning curve will delay productivity\n   \u2022 Onboarding cost and time investment needed\n   \u2022 Risk: May struggle with immediate responsibilities\n\n2. BELOW THRESHOLD PERFORMANCE\n   \u26a0\ufe0f  Overall score: 61/100 (below 'Hire' threshold of 75)\n   \u2022 Skills score: 18/100 - Weak match\n   \u2022 Risk: May not meet job expectations\n\n3. POLICY VIOLATIONS\n   \u26a0\ufe0f  Score: overall_score (61.4) below threshold (65.0)\n   \u2022 Requires waiver or exception\n   \u2022 Sets precedent for future hires\n   \u2022 Risk: Compliance and consistency issues\n\nRISK ASSESSMENT:\n  \ud83d\udfe1 MODERATE RISK - Several concerns need addressing\n     Proceed with caution and mitigation plan\n\nQUESTIONS TO CONSIDER:\n\u2022 Can we realistically close the skill gaps within 3-6 months?\n\u2022 Do we have mentorship resources to support this hire?\n\u2022 Are there stronger candidates in our pipeline?\n\u2022 What's our risk tolerance for this role?\n\u2022 Have we exhausted our recruiting channels?\n\nRECOMMENDATION:\nExercise CAUTION. Consider passing or requiring additional\nevaluation steps before making an offer to Emily Thompson.\n\nCONCLUSION:\nWhile Emily Thompson has some positive qualities, the identified gaps and risks require careful consideration before proceeding.\n\n======================================================================\n",
+      "timestamp": "2026-02-08T17:06:37.821004",
+      "metadata": {}
+    },
+    {
+      "agent": "Moderator",
+      "role": "moderator",
+      "content": "FINAL HIRING DECISION: EMILY THOMPSON\n======================================================================\n\nSYNTHESIS OF MULTI-AGENT DEBATE:\n\n1. EVALUATOR'S ASSESSMENT:\n   Overall Score: 61.4/100\n   Skills: 18 | Experience: 95 | Education: 100 | Interviews: 72\n   Constraint Compliance: 67%\n   Violations: 1\n\n2. ADVOCATE'S PERSPECTIVE:\n   \u2713 Highlights candidate strengths and potential\n   \u2713 Emphasizes growth opportunities and value-add\n   \u2713 Proposes mitigation for gaps through training\n\n3. SKEPTIC'S CONCERNS:\n   \u26a0\ufe0f  Identifies risks and weaknesses\n   \u26a0\ufe0f  Challenges assumptions about candidate readiness\n   \u26a0\ufe0f  Questions opportunity cost vs other candidates\n\nDECISION FRAMEWORK:\n  \u2717 Score (61) below hiring threshold\n  \u2717 Risks outweigh potential benefits\n\n======================================================================\nFINAL DECISION: REJECT\n======================================================================\n\nRATIONALE:\nI recommend we DO NOT EXTEND AN OFFER to Emily Thompson.\n\nAfter careful consideration:\n\u2022 Objective metrics indicate poor fit for role requirements\n\u2022 Risks and gaps are too significant to mitigate effectively\n\u2022 Better candidates likely available in market\n\nNEXT STEPS:\n1. Send professional rejection notice\n2. Continue recruiting efforts\n3. Review job requirements if pattern of rejections\n4. Consider expanding candidate sourcing channels\n\n======================================================================\nEnd of Decision Synthesis\n",
+      "timestamp": "2026-02-08T17:06:37.821979",
+      "metadata": {
+        "decision": "reject"
+      }
+    }
+  ],
+  "metadata": {
+    "constraints": "POL-DEFAULT"
+  }
+}
