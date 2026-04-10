@@ -1,0 +1,53 @@
+# Core LLM and Orchestration
+langchain==0.1.0
+langgraph==0.0.20
+langchain-community==0.0.10
+ollama==0.1.6
+
+# Embeddings and Vector Store
+sentence-transformers==2.3.1
+faiss-cpu==1.13.2
+numpy==1.24.3
+
+# Graph Store
+networkx==3.2.1
+matplotlib==3.8.2
+
+# API & Web
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+streamlit==1.31.0
+plotly==5.18.0
+pydantic==2.5.3
+python-multipart==0.0.6
+
+# Document Processing
+unstructured[local-inference]==0.12.0
+python-magic-bin==0.4.14  # For Windows
+pypdf==4.0.0
+
+# Data Handling
+pandas==2.1.4
+pydantic-settings==2.1.0
+
+# Database
+sqlalchemy==2.0.25
+
+# Utilities
+python-dotenv==1.0.0
+tiktoken==0.5.2
+tenacity==8.2.3
+
+# Observability (Optional - Free Tier)
+langfuse==2.7.3
+
+# Development and Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+black==24.1.1
+flake8==7.0.0
+mypy==1.8.0
+
+# Visualization
+plotly==5.18.0

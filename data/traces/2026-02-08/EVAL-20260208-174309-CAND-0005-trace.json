@@ -1,0 +1,111 @@
+{
+  "evaluation_id": "EVAL-20260208-174309-CAND-0005",
+  "start_time": "2026-02-08T17:43:09.836105",
+  "end_time": "2026-02-08T17:43:09.841773",
+  "summary": {
+    "evaluation_id": "EVAL-20260208-174309-CAND-0005",
+    "total_events": 10,
+    "total_duration_ms": 5.671024322509766,
+    "event_counts": {
+      "agent_start": 4,
+      "scoring_complete": 1,
+      "agent_end": 4,
+      "final_decision": 1
+    },
+    "agent_durations_ms": {
+      "Evaluator": 0.15306472778320312,
+      "Advocate": 1.3918876647949219,
+      "Skeptic": 1.459360122680664,
+      "Moderator": 1.2128353118896484
+    },
+    "tool_durations_ms": {}
+  },
+  "events": [
+    {
+      "timestamp": "2026-02-08T17:43:09.836858",
+      "event_type": "agent_start",
+      "agent": "Evaluator",
+      "action": "calculate_scores"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.837000",
+      "event_type": "scoring_complete",
+      "agent": "Evaluator",
+      "action": "calculate_overall_score",
+      "output_data": {
+        "scores": {
+          "overall": 64.42,
+          "skills": 23.5,
+          "experience": 95.0,
+          "education": 95,
+          "interviews": 81.8
+        }
+      }
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.837008",
+      "event_type": "agent_end",
+      "agent": "Evaluator",
+      "action": "calculate_scores",
+      "duration_ms": 0.15306472778320312
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.837142",
+      "event_type": "agent_start",
+      "agent": "Advocate",
+      "action": "build_pro_case"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.838534",
+      "event_type": "agent_end",
+      "agent": "Advocate",
+      "action": "build_pro_case",
+      "duration_ms": 1.3918876647949219
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.838774",
+      "event_type": "agent_start",
+      "agent": "Skeptic",
+      "action": "analyze_risks"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.840233",
+      "event_type": "agent_end",
+      "agent": "Skeptic",
+      "action": "analyze_risks",
+      "duration_ms": 1.459360122680664
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.840380",
+      "event_type": "agent_start",
+      "agent": "Moderator",
+      "action": "make_final_decision"
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.841544",
+      "event_type": "final_decision",
+      "agent": "Moderator",
+      "action": "decide",
+      "output_data": {
+        "decision": "reject",
+        "score": 64.42
+      },
+      "metadata": {
+        "component_scores": {
+          "overall": 64.42,
+          "skills": 23.5,
+          "experience": 95.0,
+          "education": 95,
+          "interviews": 81.8
+        }
+      }
+    },
+    {
+      "timestamp": "2026-02-08T17:43:09.841593",
+      "event_type": "agent_end",
+      "agent": "Moderator",
+      "action": "make_final_decision",
+      "duration_ms": 1.2128353118896484
+    }
+  ]
+}
